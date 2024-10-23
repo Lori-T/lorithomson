@@ -21,7 +21,7 @@ body {
 
 /* Header with Service Name and Navigation */
 .header {
-    background-color: #0b0c0c; /* Dark background like GOV.UK */
+    background-color: #0b0c0c; /* Dark background */
     color: #ffffff; /* White text */
     padding: 20px 0;
     border-bottom: 10px solid #005F32; /* Green border instead of blue */
@@ -116,7 +116,7 @@ body {
     color: #000000;
 }
 
-/* Form (GOV.UK style) */
+/* Form */
 .form-group {
     margin-bottom: 20px;
 }
