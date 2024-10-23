@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal website for Lori Thomson">
+    <title>Lori Thomson</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Rest of your HTML code -->
+   
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__service-name">
+                <a href="/" class="header__service-name-link">Lori Thomson</a>
+            </div>
+            <nav class="header__navigation" aria-label="Main Navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item">
+                        <a href="#about" class="header__navigation-link">About</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#services" class="header__navigation-link">Pages</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#contact" class="header__navigation-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+        <div class="container">
+            <section id="about" class="section" aria-labelledby="about-heading">
+                <h2 id="about-heading" class="section-title">About</h2>
+                <p class="section-description">This website is under construction - come back soon.</p>
+            </section>
+
+            <section id="services" class="section" aria-labelledby="services-heading">
+                <h2 id="services-heading" class="section-title">Pages</h2>
+                <ul class="service-list">
+                    <li class="service-item">Page 1</li>
+                    <li class="service-item">Page 2</li>
+                    <li class="service-item">Page 3</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="section" aria-labelledby="contact-heading">
+                <h2 id="contact-heading" class="section-title">Contact Us</h2>
+                <form action="https://example.com/submit" method="POST" class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lori Thomson. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
