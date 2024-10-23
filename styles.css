@@ -1,0 +1,221 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Black text */
+    background-color: #ffffff; /* White background */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header with Service Name and Navigation */
+.header {
+    background-color: #0b0c0c; /* Dark background like GOV.UK */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    border-bottom: 10px solid #005F32; /* Green border instead of blue */
+    width: 100%;
+}
+
+.header__container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__service-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header__service-name-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    border-top: 4px solid #005F32; /* Green top border */
+    padding-top: 10px;
+}
+
+.header__navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__navigation-item {
+    margin-right: 20px;
+}
+
+.header__navigation-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header__navigation-link:hover,
+.header__navigation-link:focus {
+    text-decoration: underline;
+    outline: 2px solid #005F32; /* Green outline for focus */
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #0b0c0c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 10px; /* Move into view when focused */
+    border: 3px solid #005F32; /* Green focus outline */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 112, 60, 0.5); /* Green halo */
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.section-description, .service-list {
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Form (GOV.UK style) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #000000; /* Black border */
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: 3px solid #005F32; /* Green focus outline */
+    box-shadow: 0 0 0 4px rgba(0, 112, 60, 0.3); /* Green halo */
+}
+
+.form-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: #6c757d; /* Lighter placeholder text */
+}
+
+.form-group--error .form-label {
+    color: #d4351c; /* Red for error labels */
+}
+
+.form-group--error .form-input, .form-group--error .form-textarea {
+    border-color: #d4351c; /* Red border for errors */
+    outline-color: #d4351c;
+}
+
+.form-error-message {
+    color: #d4351c;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    background-color: #005F32; /* Green background */
+    border: 2px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #0b0c0c; /* Dark shadow for depth */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #005a32; /* Darker green on hover */
+}
+
+.button:focus {
+    outline: 3px solid #000000; /* Black focus outline */
+    box-shadow: 0 0 0 4px rgba(0, 112, 60, 0.6); /* Green halo focus */
+}
+
+.button:active {
+    background-color: #005a32;
+    box-shadow: none;
+    top: 2px;
+    position: relative;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #0b0c0c;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Accessibility Focus Styles */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 3px solid #005F32; /* Green focus outline */
+}
